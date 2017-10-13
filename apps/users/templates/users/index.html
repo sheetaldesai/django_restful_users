@@ -18,11 +18,4 @@
     {% endfor %}
 </table>
 
-<div>
-<h2>{{addEdit}} User</h2>
-<form action="{% url 'users:addEdit' %}" method="POST">
-    {% csrf_token %}
-    {{form}}
-    <input type="submit" name="{{addEdit}}" id="" value="Add">
-</form>
-</div>
+<button name="Add"><a href="{% url 'users:edit' 0 %}">Add New</a></button>

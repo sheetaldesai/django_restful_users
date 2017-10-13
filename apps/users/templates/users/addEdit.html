@@ -1,0 +1,8 @@
+<div>
+    <h2>{{addEdit}} User</h2>
+    <form action="{% url 'users:addEdit' id %}" method="POST">
+        {% csrf_token %}
+        {{form}}
+        <input type="submit" name="{{addEdit}}" id="" value={{addEdit}}>
+    </form>
+</div>
